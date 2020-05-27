@@ -1,0 +1,855 @@
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">EPD-Device Configurator</string>
+    <string name="menu_device_configuration">Device Configuration</string>
+    <string name="menu_device_batch_configuration">Batch Configuration</string>
+    <string name="menu_firmware">Firmware</string>
+    <string name="menu_profiles">Profiles</string>
+    <string name="menu_about">About</string>
+    <string name="title_activity_device_configuration">EPD configuration</string>
+    <string name="device_configuration_device_to_configure">Device select</string>
+    <string name="device_configuration_device_type">Device Type:</string>
+    <string name="device_configuration_device_profile">Profile:</string>
+    <string name="device_configuration_ap_search_device">Rescan</string>
+    <string name="device_configuration_ap_select_all">"Select all"</string>
+    <string name="device_configuration_ap_clear_all">"Clear all"</string>
+    <string name="device_configuration_password_check_label_name">Network password</string>
+    <string name="device_configuration_network_name_text">WiFi network</string>
+    <string name="device_configuration_device_setting">Apply</string>
+    <string name="device_configuration_device_setting_all">Apply All</string>
+    <string name="device_configuration_device_apply">Apply</string>
+    <string name="device_configuration_device_abort">Abort</string>
+    <string name="device_configuration_device_done">Done</string>
+    <string name="device_configuration_device_edit_profile">...</string>
+    <string name="device_configuration_log">Log</string>
+    <string name="device_configuration_scanning_wifi">Scanning Wifi, please wait.</string>
+
+    <string name="device_configuration_device_selection">Selected devices:</string>
+    <string name="device_configuration_device_selected">\u0020%d/%d</string>
+    <string name="device_configuration_no_device_selected">Please select one or more devices.</string>
+    <string name="device_configuration_no_device">Please select the device.</string>
+    <string name="device_configuration_no_profile">Please create a profile for this device type.</string>
+     <string name="device_configuration_device_type_changed">Device type changed, please rescan.</string>
+    <string name="device_configuration_device_not_found">Device not found.</string>
+    <string name="search_ap_message">Searching for access points...</string>
+    <string name="server_wifi_not_found_message">There are no non-device Access Points nearby, please enter server SSID manually.</string>
+    <string name="device_wifi_not_found_message">Device not found.</string>
+    <string name="work_in_progress_message">Task launched, please wait...</string>
+    <string name="work_done_message">Task finished!</string>
+
+    <string name="device_firmware_no_file">Please select the firmware file.</string>
+    <string name="device_firmware_no_checksum">Please provide the correct checksum.</string>
+
+    <string name="device_profile_profile_to_configure">Profile:</string>
+    <string name="device_profile_create">New profile</string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_ok">OK</string>
+    <string name="dialog_input_name_title">New profile name:</string>
+    <string name="dialog_confirm_title">Confirm:</string>
+    <string name="dialog_about_title">About</string>
+    <string name="dialog_profile_add_new_first">Please add a new profile first.</string>
+    <string name="dialog_profile_confirm_name_exist">Profile name already exists, please use a different name.</string>
+    <string name="dialog_profile_confirm_name_invalid">Profile name is invalid, please try again.</string>
+    <string name="dialog_confirm_exit">Do you want to exit app?</string>
+    <string name="dialog_about_message">EPD/RTM configuration tool.\n\nversion: %s</string>
+    <string name="dialog_confirm_stop_running_task">Tasks are still running, do you want to exit?</string>
+    <string name="device_profile_confirm_delete">Profile <b>%s</b> will be deleted. Continue?</string>
+    <string name="device_profile_confirm_save_before_leaving">Profile changed. Do you want to save it?</string>
+    <string name="device_profile_confirm_save">OK to save?</string>
+    <string name="device_profile_wifi_hint">Click on one hotspot.</string>
+
+    <string name="device_profile_error_server_ip">Incorrect server IP.</string>
+    <string name="device_profile_error_server_port">Incorrect server port.</string>
+    <string name="device_profile_error_ssid">Incorrect SSID.</string>
+    <string name="device_profile_error_password">Password is missing.</string>
+    <string name="device_profile_error_ca_cert">CA certificate is missing.</string>
+    <string name="device_profile_error_client_cert">Client certificate is missing.</string>
+    <string name="device_profile_error_private_key">Private key is missing.</string>
+    <string name="device_profile_error_domain">Domain is missing.</string>
+    <string name="device_profile_error_identity">Identity is missing.</string>
+    <string name="device_profile_error_anonymous_identity">Anonymous identity is missing.</string>
+    <string name="device_profile_error_ip">Incorrect static IP.</string>
+    <string name="device_profile_error_gateway">Incorrect gateway.</string>
+    <string name="device_profile_error_subnet_mask">Incorrect subnet mask.</string>
+    <string name="device_profile_error_dns">Incorrect DNS.</string>
+    <string name="device_profile_error_mqtt_topic">MQTT topic is missing.</string>
+    <string name="device_profile_error_mqtt_username">MQTT username is missing.</string>
+    <string name="device_profile_error_mqtt_password">MQTT password is missing.</string>
+
+    <string name="image_description">image</string>
+
+    <string name="device_profile_server_ip">Server IP</string>
+    <string name="device_profile_server_port">Server Port</string>
+
+    <string name="device_profile_mqtt_topic">MQTT topic</string>
+    <string name="device_profile_mqtt_username">MQTT username</string>
+    <string name="device_profile_mqtt_password">MQTT password</string>
+
+    <string name="device_profile_enter_cert_path_hint">File path for the cert file</string>
+
+
+
+    <string name="wifi_eap_ca_cert_file">CA certificate(*.pem)</string>
+    <string name="wifi_eap_client_cert_file">Client certificate(*.pem)</string>
+    <string name="wifi_eap_private_key_file">Private key</string>
+    <string name="file_status_missing">Not Present</string>
+    <string name="file_status_saved">Saved</string>
+    <string name="wifi_eap_file_max_exceeded">The file size is larger than 40K, please try another one.</string>
+    <string name="wifi_eap_file_delete_message">Nothing selected. Would you like to remove the old one?</string>
+
+    <string name="run_task_done">Done</string>
+    <string name="run_task_waiting">Please wait...</string>
+    <string name="select_file_title">Please select the target file:</string>
+
+    <string name="device_firmware_label">Firmware file:</string>
+    <string name="device_firmware_checksum_label">Firmware checksum:</string>
+    <string name="firmware_checksum_hint">0AF1</string>
+
+    <string-array name="device_types">
+        <item>EPD7800</item>
+        <item>EPD9700</item>
+<!--        <item>RTM</item>-->
+    </string-array>
+
+    <!-- a quick hack to remove RTM from firmware list as RTM happen to be the last one-->
+    <string-array name="firmware_device_types">
+        <item>EPD7800</item>
+        <item>EPD9700</item>
+    </string-array>
+    <!-- text presentation for wifi security drop-down, the order need to be in sync with SecurityType.java -->
+    <string-array name="wifi_security_types">
+        <item>None</item>
+        <item>WEP</item>
+        <item>WPA/WPA2-Personal</item>
+        <item>WPA/WPA2-Enterprise</item>
+    </string-array>
+
+
+    <string name="wifi_ssid">Network name</string>
+    <string name="device_configuration_ssid">Device SSID</string>
+
+
+    <!-- Wi-Fi Settings -->
+    <!-- Used in the 1st-level settings screen to turn on Wi-Fi -->
+    <string name="wifi_quick_toggle_title">Wi\u2011Fi</string>
+    <!-- Used in the 1st-level settings screen as the turn-on summary -->
+    <string name="wifi_quick_toggle_summary">Turn on Wi\u2011Fi</string>
+    <!-- Used in the 1st-level settings screen to go to the 2nd-level settings screen  [CHAR LIMIT=20]-->
+    <string name="wifi_settings">Wi\u2011Fi</string>
+    <!-- Used in the Wi-Fi settings screen to control turning on/off Wi-Fi entirely [CHAR LIMIT=30]-->
+    <string name="wifi_settings_master_switch_title">Use Wi\u2011Fi</string>
+    <!-- Title of the Wi-fi settings screen -->
+    <string name="wifi_settings_category">Wi\u2011Fi settings</string>
+    <!-- Title of the Wi-fi settings entry in the left top level menu -->
+    <string name="wifi_settings_title">Wi\u2011Fi</string>
+    <!-- Summary text of the Wi-fi settings screen -->
+    <string name="wifi_settings_summary">Set up &amp; manage wireless access points</string>
+    <!-- Used by Account creation for turning on Wi-Fi  [CHAR LIMIT=60] -->
+    <string name="wifi_select_network">Select Wi\u2011Fi</string>
+    <!-- Summary text when turning Wi-Fi or bluetooth on -->
+    <string name="wifi_starting">Turning Wi\u2011Fi on\u2026</string>
+    <!-- Summary text when turning Wi-Fi or bluetooth off -->
+    <string name="wifi_stopping">Turning off Wi\u2011Fi\u2026</string>
+    <!-- Summary text when Wi-Fi or bluetooth has error -->
+    <string name="wifi_error">Error</string>
+    <!-- Summary text when wifi SoftAP started failed due to no legal usable channel allowed in this region by regulatory -->
+    <string name="wifi_sap_no_channel_error">5 GHz band not available in this country</string>
+    <!-- Toast message when Wi-Fi or bluetooth is disallowed in airplane mode -->
+    <string name="wifi_in_airplane_mode">In Airplane mode</string>
+    <!-- Checkbox title for option to notify user when open networks are nearby -->
+    <string name="wifi_notify_open_networks">Open network notification</string>
+    <!-- Checkbox summary for option to notify user when open networks are nearby-->
+    <string name="wifi_notify_open_networks_summary">Notify when a high\u2011quality public network is available</string>
+    <!-- Checkbox title for option to enable Wi-Fi when saved networks are nearby -->
+    <string name="wifi_wakeup">Turn on Wi\u2011Fi automatically</string>
+    <!-- Checkbox summary for option to enable Wi-Fi when high quality saved networks are nearby-->
+    <string name="wifi_wakeup_summary">Wi\u2011Fi will turn back on near high\u2011quality saved networks, like your home network</string>
+    <!-- Checkbox summary for auto-wifi when user needs to enable location scanning to toggle it -->
+    <string name="wifi_wakeup_summary_no_location">Unavailable because location is turned off. Turn on <annotation id="link">location</annotation>.</string>
+    <!-- Checkbox summary for Wi-Fi wakeup option to explain that Wi-Fi wakeup is disabled because Wi-Fi scanning is turned off -->
+    <string name="wifi_wakeup_summary_scanning_disabled">Unavailable because Wi\u2011Fi scanning is turned off</string>
+    <!-- Checkbox summary for Wi-Fi wakeup option to explain that a network rating provider needs to be selected to use the feature. -->
+    <string name="wifi_wakeup_summary_scoring_disabled">To use, select a network rating provider</string>
+    <!-- Checkbox title for option to toggle poor network detection -->
+    <string name="wifi_poor_network_detection">Avoid poor connections</string>
+    <!-- Checkbox summary for option to toggle poor network detection -->
+    <string name="wifi_poor_network_detection_summary">Don\u2019t use a Wi\u2011Fi network unless it has a good internet connection</string>
+    <!-- Checkbox summary for option to toggle poor network detection [CHAR LIMIT=60] -->
+    <string name="wifi_avoid_poor_network_detection_summary">Only use networks that have a good internet connection</string>
+    <!-- Checkbox title for option to connect to open Wi-Fi automatically [CHAR LIMIT=40] -->
+    <string name="use_open_wifi_automatically_title">Connect to open networks</string>
+    <!-- Checkbox summary for option to connect to open Wi-Fi automatically  [CHAR LIMIT=100] -->
+    <string name="use_open_wifi_automatically_summary">Automatically connect to high\u2011quality public networks</string>
+    <!-- Checkbox summary for option to connect to open Wi-Fi automatically, to explain that a network rating provider needs to be selected to use the feature. -->
+    <string name="use_open_wifi_automatically_summary_scoring_disabled">To use, select a network rating provider</string>
+    <!-- Checkbox summary for option to connect to open Wi-Fi automatically, to explain that a compatible network rating provider needs to be selected to use the feature. -->
+    <string name="use_open_wifi_automatically_summary_scorer_unsupported_disabled">To use, select a compatible network rating provider</string>
+    <!-- Preference title for option to install certificates -->
+    <string name="wifi_install_credentials">Install certificates</string>
+    <!-- Message to describe "Wi-Fi scan always available feature" when Wi-Fi is off and Wi-Fi
+      scanning is on. The place-holders "LINK_BEGIN" and "LINK_END" must NOT be translated. They
+      mark a link to bring the user to "scanning settings" screen. -->
+    <string name="wifi_scan_notify_text">To improve location accuracy, apps and services can still scan for Wi\u2011Fi networks at any time, even when Wi\u2011Fi is off. This can be used, for example, to improve location-based features and services. You can change this in <xliff:g id="link_begin">LINK_BEGIN</xliff:g>scanning settings<xliff:g id="link_end">LINK_END</xliff:g>.</string>
+    <!-- Message to describe "Wi-Fi scan always available feature" when Wi-Fi is off and Wi-Fi
+      scanning is also off. The place-holders "LINK_BEGIN" and "LINK_END" must NOT be translated.
+      They mark a link to bring the user to "scanning settings" screen. -->
+    <string name="wifi_scan_notify_text_scanning_off">To improve location accuracy,
+        turn on Wi-Fi scanning in
+        <xliff:g id="link_begin">LINK_BEGIN</xliff:g>scanning
+        settings<xliff:g id="link_end">LINK_END</xliff:g>.</string>
+    <!-- Wifi scan always mode checkbox text -->
+    <string name="wifi_scan_notify_remember_choice">Don\u2019t show again</string>
+    <!-- Setting title for setting the wifi sleep policy. Do we keep Wi-Fi active when the screen turns off? -->
+    <string name="wifi_setting_sleep_policy_title">Keep Wi\u2011Fi on during sleep</string>
+    <!-- Setting title for setting the wifi sleep policy. Do we keep Wi-Fi active when the screen turns off? [CHAR LIMIT=30] -->
+    <string name="wifi_setting_on_during_sleep_title">Wi\u2011Fi on during sleep</string>
+    <!-- Generic error message when the sleep policy could not be set. -->
+    <string name="wifi_setting_sleep_policy_error">There was a problem changing the setting</string>
+    <!-- Checkbox title for option to toggle suspend power optimizations [CHAR LIMIT=30] -->
+    <string name="wifi_suspend_efficiency_title">Improve efficiency</string>
+    <!-- Checkbox title for option to toggle suspend power optimizations -->
+    <string name="wifi_suspend_optimizations">Wi\u2011Fi optimization</string>
+    <!-- Checkbox summary for option to toggle suspend power optimizations -->
+    <string name="wifi_suspend_optimizations_summary">Minimize battery usage when Wi\u2011Fi is on</string>
+    <!-- Checkbox summary for option to toggle suspend power optimizations [CHAR LIMIT=30] -->
+    <string name="wifi_limit_optimizations_summary">Limit battery used by Wi\u2011Fi</string>
+    <!-- Checkbox title. Should we switch to using cellular data if Wi-Fi is still connected but the Wi-Fi network we're connected to no longer has Internet access (e.g., due to an outage)? -->
+    <string name="wifi_switch_away_when_unvalidated">Switch to mobile data if Wi\u2011Fi loses internet access.</string>
+    <!-- Preference title for option to automatically switch away from bad wifi networks [CHAR LIMIT=60]-->
+    <string name="wifi_cellular_data_fallback_title">Switch to mobile data automatically</string>
+    <!-- Preference summary to automatically switch away from bad wifi networks [CHAR LIMIT=None]-->
+    <string name="wifi_cellular_data_fallback_summary">Use mobile data when Wi\u2011Fi has no internet access. Data usage charges may apply.</string>
+    <!-- Action bar text message to manually add a wifi network [CHAR LIMIT=20]-->
+    <string name="wifi_add_network">Add network</string>
+    <!-- Action bar title to open additional Wi-Fi settings-->
+    <string name="wifi_configure_settings_preference_title">Wi\u2011Fi preferences</string>
+    <!-- Summary for Wi-Fi Preferences that explains that Wi-Fi will be enabled when high quality saved networks are nearby-->
+    <string name="wifi_configure_settings_preference_summary_wakeup_on">Wi\u2011Fi turns back on automatically</string>
+    <!-- Summary for Wi-Fi Preferences that explains that Wi-Fi will not automatically be enabled when high quality saved networks are nearby-->
+    <string name="wifi_configure_settings_preference_summary_wakeup_off">Wi\u2011Fi doesn\u0027t turn back on automatically</string>
+    <!-- Header for the list of wifi networks-->
+    <string name="wifi_access_points">Wi\u2011Fi networks</string>
+    <!-- Content description for menu button in Wifi setup. Not shown on the screen. [CHAR LIMIT=NONE] -->
+    <string name="wifi_menu_more_options">More options</string>
+    <!-- Menu option to launch Wi-Fi Direct settings [CHAR LIMIT=20]-->
+    <string name="wifi_menu_p2p">Wi\u2011Fi Direct</string>
+    <!-- Menu option to scan Wi-Fi networks -->
+    <string name="wifi_menu_scan">Scan</string>
+    <!-- Menu option to Wi-Fi advanced settings -->
+    <string name="wifi_menu_advanced">Advanced</string>
+    <!-- Menu option to Wi-Fi configure settings -->
+    <string name="wifi_menu_configure">Configure</string>
+    <!-- Menu option to connect to a Wi-Fi network -->
+    <string name="wifi_menu_connect">Connect to network</string>
+    <!-- Menu option to remember a temporary Wi-Fi network -->
+    <string name="wifi_menu_remember">Remember network</string>
+    <!-- Menu option to delete a Wi-Fi network -->
+    <string name="wifi_menu_forget">Forget network</string>
+    <!-- Menu option to modify a Wi-Fi network configuration -->
+    <string name="wifi_menu_modify">Modify network</string>
+    <!-- Wi-Fi settings. text displayed when Wi-Fi is off and network list is empty [CHAR LIMIT=50]-->
+    <string name="wifi_empty_list_wifi_off">To see available networks, turn Wi\u2011Fi on.</string>
+    <!-- Wi-Fi settings. text displayed when Wi-Fi is on and network list is empty [CHAR LIMIT=50]-->
+    <string name="wifi_empty_list_wifi_on">Searching for Wi\u2011Fi networks\u2026</string>
+    <!-- Wifi Settings. text displayed when user has restriction DISALLOW_CONFIG_WIFI [CHAR LIMIT=NONE]-->
+    <string name="wifi_empty_list_user_restricted">You don\u2019t have permission to change the Wi\u2011Fi network.</string>
+    <!-- Wi-Fi settings. content description for more button [CHAR LIMIT=50]-->
+    <string name="wifi_more">More</string>
+    <!-- Wi-Fi settings. wps menu title [CHAR LIMIT=25]-->
+    <string name="wifi_setup_wps">Automatic setup (WPS)</string>
+    <!-- Wi-Fi settings dialog. Title of dialog displayed asking user to enable Wi-Fi Scanning [CHAR LIMIT=60]-->
+    <string name="wifi_settings_scanning_required_title">Turn on Wi\u2011Fi scanning?</string>
+    <!-- Wi-Fi settings dialog. Summary text describing why we need Wi-Fi scanning on. [CHAR LIMIT=NONE]-->
+    <string name="wifi_settings_scanning_required_summary">To turn on Wi\u2011Fi automatically, you first need to turn on Wi\u2011Fi scanning.</string>
+    <!-- Wi-Fi settings dialog. Informational text describing what Wi-Fi scanning does. [CHAR LIMIT=NONE]-->
+    <string name="wifi_settings_scanning_required_info">Wi\u2011Fi scanning allows apps and services to scan for Wi\u2011Fi networks at any time, even when Wi\u2011Fi is off. This can be used, for example, to improve location\u2011based features and services.</string>
+    <!-- Wi-Fi settings dialog. Text for the button that takes users to a help article about Wi-Fi scanning. [CHAR LIMIT = 20]-->
+    <string name="wifi_settings_scanning_required_turn_on">Turn on</string>
+    <!-- Wi-Fi settings dialog. Text to show in toast for when user turns on wifi scanning. [CHAR LIMIT=NONE] -->
+    <string name="wifi_settings_scanning_required_enabled">Wi\u2011Fi scanning turned on</string>
+    <!-- Dialog for Access Points --> <skip />
+    <!-- Label to show/hide advanced options [CHAR LIMIT=40] -->
+    <string name="wifi_show_advanced">Advanced options</string>
+    <!-- Message for talkback to say when Advanced Options expanded [CHAR LIMIT=NONE] -->
+    <string name="wifi_advanced_toggle_description_expanded">Drop down list Advanced Options. Double-tap to collapse.</string>
+    <!-- Message for talkback to say when Advanced Options is collapsed [CHAR LIMIT=NONE] -->
+    <string name="wifi_advanced_toggle_description_collapsed">Drop down list Advanced Options. Double-tap to expand.</string>
+    <!-- Label for the SSID of the network -->
+
+    <!-- Hint for a text field to enter the SSID of a hidden wifi network. [CHAR LIMIT=35] -->
+    <string name="wifi_ssid_hint">Enter the SSID</string>
+    <!-- Label for the security of the connection -->
+    <string name="wifi_security">Security</string>
+    <!-- Label for the hidden network status of this network -->
+    <string name="wifi_hidden_network">Hidden network</string>
+    <!-- Label for the warning shown to users if they try to connect to a network as "hidden" -->
+    <string name="wifi_hidden_network_warning">If your router is not broadcasting a network ID but you would like to connect to it in the future, you can set the network as hidden.\n\nThis may create a security risk because your phone will regularly broadcast its signal to find the network.\n\nSetting the network as hidden will not change your router settings.</string>
+    <!-- Label for the signal strength of the connection -->
+    <string name="wifi_signal">Signal strength</string>
+    <!-- Label for the status of the connection -->
+    <string name="wifi_status">Status</string>
+    <!-- Label for the transmit link speed of the connection. [CHAR LIMIT=32] -->
+    <string name="tx_wifi_speed">Transmit link speed</string>
+    <!-- Label for the receive link speed of the connection. [CHAR LIMIT=32] -->
+    <string name="rx_wifi_speed">Receive link speed</string>
+    <!-- Label for the frequency band of the connection -->
+    <string name="wifi_frequency">Frequency</string>
+    <!-- Label for the IP address of the connection -->
+    <string name="wifi_ip_address">IP address</string>
+    <!-- Label for Passpoint network -->
+    <string name="passpoint_label">Saved via</string>
+    <!-- Content for Passpoint network -->
+    <string name="passpoint_content"><xliff:g id="name">%1$s</xliff:g> credentials</string>
+    <!-- Label for the EAP method of the network -->
+    <string name="wifi_eap_method">EAP method</string>
+    <!-- Label for the phase2 -->
+    <string name="please_select_phase2">Phase 2 authentication</string>
+    <!-- Label for the EAP CA certificate of the network -->
+    <string name="wifi_eap_ca_cert">CA certificate</string>
+    <!-- Label for the domain name that the EAP CA certificate(s) can be used to validate. -->
+    <string name="wifi_eap_domain">Domain</string>
+    <!-- Label for the EAP user certificate of the network -->
+    <string name="wifi_eap_user_cert">User certificate</string>
+    <!-- Label for the EAP identity of the network -->
+    <string name="wifi_eap_identity">Identity</string>
+    <!-- Label for the EAP anonymous identity of the network -->
+    <string name="wifi_eap_anonymous">Anonymous identity</string>
+    <!-- Label for the password of the secured network -->
+    <string name="wifi_password">Password</string>
+    <!-- Label for the check box to show password -->
+    <string name="wifi_show_password">Show password</string>
+    <!-- Label for the RadioGroup to choose wifi ap band -->
+    <string name="wifi_ap_band_config">Select AP Band</string>
+    <!-- Label for the radio button to choose wifi ap channel automatically-->
+    <string name="wifi_ap_choose_auto">Auto</string>
+    <!-- Label for the radio button to choose wifi ap 2.4 GHz band -->
+    <string name="wifi_ap_choose_2G">2.4 GHz Band</string>
+    <!-- Label for the radio button to only choose wifi ap 5GHz band -->
+    <string name="wifi_ap_choose_5G">5.0 GHz Band</string>
+    <!-- Label for the radio button to prefer 5GHz wifi ap band  [CHAR LIMIT=80]-->
+    <string name="wifi_ap_prefer_5G">5.0 GHz Band preferred</string>
+    <!-- Label for adding to the list of selected bands when 2.4 GHz is selected -->
+    <string name="wifi_ap_2G">2.4 GHz</string>
+    <!-- Label for adding to the list of selected bands when 5.0 GHz is selected -->
+    <string name="wifi_ap_5G">5.0 GHz</string>
+    <!-- Label that is shown as a dialog summary informing users they must pick at LEAST one band for their hotspot [CHAR LIMIT=NONE]-->
+    <string name="wifi_ap_band_select_one">Choose at least one band for Wi\u2011Fi hotspot:</string>
+    <!-- Label for the spinner to show ip settings [CHAR LIMIT=25] -->
+    <string name="wifi_ip_settings">IP settings</string>
+    <!-- Label for the spinner to show Wifi MAC randomization [CHAR LIMIT=25] -->
+    <string name="wifi_privacy_settings">Privacy</string>
+    <!-- Summary for Wifi MAC randomization option when it is ephemeral network [CHAR LIMIT=40] -->
+    <string name="wifi_privacy_settings_ephemeral_summary">Randomized MAC</string>
+    <!-- Title for the fragment to add a device into the wifi network [CHAR LIMIT=50]  -->
+    <string name="wifi_dpp_add_device_to_network">Add a device</string>
+    <!-- Hint for the user to center another device's QR code in the below camera window [CHAR LIMIT=120] -->
+    <string name="wifi_dpp_center_qr_code">Center the QR code below to add the device to \u201c<xliff:g id="ssid" example="OfficeWifi">%1$s</xliff:g>\u201d</string>
+    <!-- Title for the fragment to scan QR code [CHAR LIMIT=50]  -->
+    <string name="wifi_dpp_scan_qr_code">Scan QR code</string>
+    <!-- Hint for the user to center another device's QR code in the below camera window [CHAR LIMIT=NONE] -->
+    <string name="wifi_dpp_scan_qr_code_join_network">Center the QR code below to connect to \u201c<xliff:g id="ssid" example="OfficeWifi">%1$s</xliff:g>\u201d</string>
+    <!-- Hint for the user to center another device's QR code in the below camera window [CHAR LIMIT=NONE] -->
+    <string name="wifi_dpp_scan_qr_code_join_unknown_network">Join Wi\u2011Fi by scanning a QR code</string>
+    <!-- Title for the fragment to share Wi-Fi [CHAR LIMIT=50]  -->
+    <string name="wifi_dpp_share_wifi">Share Wi\u2011Fi</string>
+    <!-- Hint for the user to use another device to scan QR code on screen to join Wi-Fi [CHAR LIMIT=NONE] -->
+    <string name="wifi_dpp_scan_qr_code_with_another_device">Scan this QR code to connect to \u201c<xliff:g id="ssid" example="OfficeWifi">%1$s</xliff:g>\u201d and share the password</string>
+    <!-- Hint for the user to use another device to scan QR code on screen to join a open Wi-Fi [CHAR LIMIT=NONE] -->
+    <string name="wifi_dpp_scan_open_network_qr_code_with_another_device">Scan this QR code to connect to \u201c<xliff:g id="ssid" example="OfficeWifi">%1$s</xliff:g>\u201d</string>
+    <!-- Hint for QR code detection [CHAR LIMIT=NONE]  -->
+    <string name="wifi_dpp_could_not_detect_valid_qr_code">Couldn\u2019t read QR code. Re-center code and try again</string>
+    <!-- Hint for Wi-Fi DPP handshake failure [CHAR LIMIT=NONE]  -->
+    <string name="wifi_dpp_failure_authentication_or_configuration">Try again. If the issue continues, contact the device manufacturer</string>
+    <!-- Hint for Wi-Fi DPP handshake failure [CHAR LIMIT=NONE]  -->
+    <string name="wifi_dpp_failure_not_compatible">Something went wrong</string>
+    <!-- Hint for Wi-Fi DPP handshake failure [CHAR LIMIT=NONE]  -->
+    <string name="wifi_dpp_failure_timeout">Make sure the device has been plugged in, charged, and turned on</string>
+    <!-- Hint for Wi-Fi DPP handshake failure [CHAR LIMIT=NONE]  -->
+    <string name="wifi_dpp_failure_generic">Make sure the device has been plugged in, charged, and turned on. If the issue continues, contact the device manufacturer</string>
+    <!-- Hint for Wi-Fi DPP handshake failure [CHAR LIMIT=NONE]  -->
+    <string name="wifi_dpp_failure_not_supported">Adding \u201c<xliff:g id="ssid" example="OfficeWifi">%1$s</xliff:g>\u201d isn\u2019t supported by this device</string>
+    <!-- Hint for Wi-Fi connection fail [CHAR LIMIT=NONE]  -->
+    <string name="wifi_dpp_check_connection_try_again">Check connection and try again</string>
+    <!-- Title for the fragment choose network [CHAR LIMIT=50]  -->
+    <string name="wifi_dpp_choose_network">Choose network</string>
+    <!-- Hint for the user to center another device's QR code in the below camera window [CHAR LIMIT=NONE] -->
+    <string name="wifi_dpp_choose_network_to_connect_device">To connect your device, choose a network</string>
+    <!-- Hint for the user to add the device to a Wi-Fi network [CHAR LIMIT=NONE] -->
+    <string name="wifi_dpp_add_device_to_wifi">Add this device to \u201c<xliff:g id="ssid" example="OfficeWifi">%1$s</xliff:g>\u201d?</string>
+    <!-- Title for the fragment to tell the user that Wi-Fi shared with device successfully [CHAR LIMIT=50]  -->
+    <string name="wifi_dpp_wifi_shared_with_device">Wi\u2011Fi shared with device</string>
+    <!-- Button label to add another device to Wi-Fi [CHAR LIMIT=50]  -->
+    <string name="wifi_dpp_add_another_device">Add another device</string>
+    <!-- Button label to choose different Wi-Fi network [CHAR LIMIT=80]  -->
+    <string name="wifi_dpp_choose_different_network">Choose different network</string>
+    <!-- Hint for QR code detection [CHAR LIMIT=50]  -->
+    <string name="wifi_dpp_could_not_add_device">Couldn\u2019t add device</string>
+    <!-- Title for the fragment to show that device found but naming known [CHAR LIMIT=50]  -->
+    <string name="wifi_dpp_device_found">Device found</string>
+    <!-- Hint for Wi-Fi DPP handshake running [CHAR LIMIT=NONE]  -->
+    <string name="wifi_dpp_sharing_wifi_with_this_device">Sharing Wi\u2011Fi with this device\u2026</string>
+    <!-- Hint for Wi-Fi DPP handshake running [CHAR LIMIT=NONE]  -->
+    <string name="wifi_dpp_connecting">Connecting\u2026</string>
+    <!-- Title for the fragment to show that the QR code is for sharing Wi-Fi hotspot network [CHAR LIMIT=50] -->
+    <string name="wifi_dpp_share_hotspot">Share hotspot</string>
+    <!-- Title for Wi-Fi DPP lockscreen title [CHAR LIMIT=50] -->
+    <string name="wifi_dpp_lockscreen_title">Verify it\u0027s you</string>
+    <!-- Hint for Wi-Fi password [CHAR LIMIT=50]  -->
+    <string name="wifi_dpp_wifi_password">Wi\u2011Fi password: <xliff:g id="password" example="my password">%1$s</xliff:g></string>
+    <!-- Hint for Wi-Fi hotspot password [CHAR LIMIT=50]  -->
+    <string name="wifi_dpp_hotspot_password">Hotspot password: <xliff:g id="password" example="my password">%1$s</xliff:g></string>
+    <!-- Label for "Use a QR code to add a device to this network" [CHAR LIMIT=50]  -->
+    <string name="wifi_dpp_add_device">Add device</string>
+    <!-- Hint for "Add device" [CHAR LIMIT=NONE]  -->
+    <string name="wifi_dpp_connect_network_using_qr_code">Use a QR code to add a device to this network</string>
+    <!-- Label for the try again button [CHAR LIMIT=20]-->
+    <string name="retry">Retry</string>
+    <!-- Label for the check box to share a network with other users on the same device -->
+    <string name="wifi_shared">Share with other device users</string>
+    <!-- Hint for unchanged fields -->
+    <string name="wifi_unchanged">(unchanged)</string>
+    <!-- Hint for unspecified fields -->
+    <string name="wifi_unspecified">Please select</string>
+    <!-- Hint for multiple certificates being added to the configuration -->
+    <string name="wifi_multiple_cert_added">(Multiple certificates added)</string>
+    <!-- Menu option for using trusted system CA certificates to validate EAP servers -->
+    <string name="wifi_use_system_certs">Use system certificates</string>
+    <!-- Menu option for not providing an EAP user certificate -->
+    <string name="wifi_do_not_provide_eap_user_cert">Do not provide</string>
+    <!-- Menu option for not validating the EAP server -->
+    <string name="wifi_do_not_validate_eap_server">Do not validate</string>
+    <!-- Warning message displayed if user choses not to validate the EAP server -->
+    <string name="wifi_do_not_validate_eap_server_warning">No certificate specified. Your connection will not be private.</string>
+    <!-- Warning message displayed if network name (ssid) is too long -->
+    <string name="wifi_ssid_too_long">Network name is too long.</string>
+    <!-- Warning message displayed if user does not specify a domain for the CA certificate.
+         Only displayed if the user also chooses to use system certificates. -->
+    <string name="wifi_no_domain_warning">Must specify a domain.</string>
+    <!-- Substring of status line when Wi-Fi Protected Setup (WPS) is available and
+         string is listed first [CHAR LIMIT=20]-->
+    <string name="wifi_wps_available_first_item">WPS available</string>
+    <!-- Substring of wifi status when Wi-Fi Protected Setup (WPS) is available and
+         string is listed after a wifi_secured_* string-->
+    <string name="wifi_wps_available_second_item">\u0020(WPS available)</string>
+    <!-- Message in dialog when the user tries to connect to a carrier network[CHAR_LIMIT=40] -->
+    <string name="wifi_carrier_connect">Carrier Wi\u2011Fi network</string>
+    <!-- Message in dialog when the user tries to connect to a carrier network[CHAR_LIMIT=60] -->
+    <string name="wifi_carrier_content">Connect via <xliff:g id="name">%1$s</xliff:g></string>
+    <string name="wifi_scan_always_turnon_message">To improve location accuracy and for other purposes, <xliff:g id="app_name">%1$s</xliff:g> wants to turn on network scanning, even when Wi-Fi is off.\n\nAllow this for all apps that want to scan?</string>
+    <!-- Message to inform user, an unknown app want to enable network scanning.  [CHAR LIMIT=250] -->
+    <string name="wifi_scan_always_turn_on_message_unknown">To improve location accuracy and for other purposes, an unknown app wants to turn on network scanning, even when Wi\u2011Fi is off.\n\nAllow this for all apps that want to scan?</string>
+    <!-- Message informing the user how to turn off  [CHAR LIMIT=200] -->
+    <string name="wifi_scan_always_turnoff_message">To turn this off, go to Advanced in the overflow menu.</string>
+    <string name="wifi_scan_always_confirm_allow">Allow</string>
+    <string name="wifi_scan_always_confirm_deny">Deny</string>
+
+    <!-- Dialog label to sign in to a Hotspot. [CHAR LIMIT=50]-->
+    <string name="wifi_hotspot_title">Sign in to connect?</string>
+    <!-- Dialog message to sign in to a Hotspot. [CHAR LIMIT=50]-->
+    <string name="wifi_hotspot_message"><xliff:g id="app_name">%1$s</xliff:g> requires you to sign in online before you connect to the network.</string>
+    <!-- Wifi settings button to connect in to a Hotspot. [CHAR LIMIT=50]-->
+    <string name="wifi_hotspot_connect">CONNECT</string>
+    <!-- Dialog text to tell the user that the selected network does not have Internet access. -->
+    <string name="no_internet_access_text">This network has no internet access. Stay connected?</string>
+    <!-- Dialog text to tell the user that the selected network has incomplete Internet access. [CHAR LIMIT=100] -->
+    <string name="partial_connectivity_text">Some apps and services may not work due to limited connectivity. Use anyway?</string>
+    <string name="no_internet_access_remember">Don\u2019t ask again for this network</string>
+    <!-- Dialog text to tell the user that the selected network has lost Internet access, and asking the user whether they want to avoid this network. -->
+    <string name="lost_internet_access_title">Wi\u2011Fi is not connected to the internet</string>
+    <string name="lost_internet_access_text">You can switch to the mobile network whenever Wi\u2011Fi has a bad connection. Data usage charges may apply.</string>
+    <!-- Button text to let user switch to mobile data -->
+    <string name="lost_internet_access_switch">Switch to mobile</string>
+    <string name="lost_internet_access_cancel">Stay on Wi\u2011Fi</string>
+    <string name="lost_internet_access_persist">Never show again</string>
+    <!-- Button label to connect to a Wi-Fi network -->
+    <string name="wifi_connect">Connect</string>
+    <!-- Turned on notification for Wi-Fi [CHAR LIMIT=40] -->
+    <string name="wifi_turned_on_message">Wi\u2011Fi turned on</string>
+    <!-- Connected to notification for Wi-Fi [CHAR LIMIT=NONE] -->
+<!--    <string name="wifi_connected_to_message">@string/bluetooth_connected_summary</string>-->
+    <!-- Button label to connecting progress to a Wi-Fi network [CHAR LIMIT=20] -->
+    <string name="wifi_connecting">Connecting\u2026</string>
+    <!-- Button label to disconnect to a Wi-Fi network [CHAR LIMIT=NONE] -->
+<!--    <string name="wifi_disconnect">@string/bluetooth_device_context_disconnect</string>-->
+    <!-- Failured notification for connect -->
+    <string name="wifi_failed_connect_message">Failed to connect to network</string>
+    <!-- Not in range notification for connect [CHAR LIMIT=40] -->
+    <string name="wifi_not_in_range_message">Network not in range</string>
+    <!-- Button label to delete a Wi-Fi network -->
+    <string name="wifi_forget">Forget</string>
+    <!-- Button label to modify a Wi-Fi network -->
+    <string name="wifi_modify">Modify</string>
+    <!-- Failured notification for forget -->
+    <string name="wifi_failed_forget_message">Failed to forget network</string>
+    <!-- Button label to save a Wi-Fi network configuration -->
+    <string name="wifi_save">Save</string>
+    <!-- Failured notification for save -->
+    <string name="wifi_failed_save_message">Failed to save network</string>
+    <!-- Button label to dismiss the dialog -->
+    <string name="wifi_cancel">Cancel</string>
+    <!-- Dialog title for forget confirmation dialog -->
+    <string name="wifi_forget_dialog_title">Forget network?</string>
+    <!-- Dialog message for forget confirmation dialog -->
+    <string name="wifi_forget_dialog_message">All passwords for this network will be deleted</string>
+    <!-- Wi-Fi Advanced Settings --> <skip />
+    <!-- Wi-Fi settings screen, Saved networks summary.  This shows below the "Saved networks" item and indicates the number of networks, not including passpoint network, a user has saved. [CHAR LIMIT=30] -->
+    <plurals name="wifi_saved_access_points_summary">
+        <item quantity="one">1 network</item>
+        <item quantity="other">%d networks</item>
+    </plurals>
+    <!-- Wi-Fi settings screen, Saved networks summary.  This shows below the "Saved networks" item and indicates the number of passpoint networks a user has saved. [CHAR LIMIT=30] -->
+    <plurals name="wifi_saved_passpoint_access_points_summary">
+        <item quantity="one">1 subscription</item>
+        <item quantity="other">%d subscriptions</item>
+    </plurals>
+    <!-- Wi-Fi settings screen, Saved networks summary.  This shows below the "Saved networks" item and indicates number of whole kinds networks, if there are both normal saved networks and saved passpoint networks. The number will be at least 2, so the one case is only to prevent lint error. [CHAR LIMIT=60] -->
+    <plurals name="wifi_saved_all_access_points_summary">
+        <item quantity="one">1 network &amp; subscription</item>
+        <item quantity="other">%d networks &amp; subscriptions</item>
+    </plurals>
+    <!-- Wi-Fi settings screen, advanced, settings section.  This is a header shown above advanced wifi settings. [CHAR LIMIT=30] -->
+    <string name="wifi_advanced_titlebar">Advanced Wi\u2011Fi</string>
+    <!-- Wi-Fi settings screen, advanced, title of the item to show the Wi-Fi device's SSID. [CHAR LIMIT=20] -->
+    <string name="wifi_advanced_ssid_title">SSID</string>
+    <!-- Wi-Fi settings screen, advanced, title of the item to show the Wi-Fi device's MAC address. -->
+    <string name="wifi_advanced_mac_address_title">MAC address</string>
+    <!-- Title of the screen to adjust IP settings -->
+    <!-- Wi-Fi settings screen, advanced, title of the item to show the Wi-Fi device's current IP address. -->
+    <string name="wifi_advanced_ip_address_title">IP address</string>
+    <!-- Wifi Network Details -->
+    <!-- Wifi details title-->
+    <string name="wifi_details_title">Network details</string>
+    <!-- Wifi details preference title to display router IP subnet mask -->
+    <string name="wifi_details_subnet_mask">Subnet mask</string>
+    <!-- Wifi details preference title to display router DNS info -->
+    <string name="wifi_details_dns">DNS</string>
+    <!-- Wifi details preference category title for IPv6 information -->
+    <string name="wifi_details_ipv6_address_header">IPv6 addresses</string>
+    <!-- Wifi saved access points.  Used as a label under the shortcut icon that goes to Wifi saved access points. [CHAR LIMIT=20] -->
+    <string name="wifi_saved_access_points_label">Saved networks</string>
+    <!-- Tab title for showing subscribed WiFi access points. [CHAR LIMIT=20] -->
+    <string name="wifi_subscribed_access_points_tab">Subscriptions</string>
+    <!-- Tab title for showing saved WiFi access points. -->
+    <string name="wifi_saved_access_points_tab">@string/wifi_access_points</string>
+    <!-- Wifi Advanced settings.  Used as a label under the shortcut icon that goes to Wifi advanced settings. [CHAR LIMIT=20] -->
+    <string name="wifi_advanced_settings_label">IP settings</string>
+    <!-- Error message for users that aren't allowed to see or modify WiFi advanced settings [CHAR LIMIT=NONE] -->
+    <string name="wifi_advanced_not_available">Wi\u2011Fi advanced settings are not available for this user</string>
+    <!-- Menu item to save the IP settings -->
+    <string name="wifi_ip_settings_menu_save">Save</string>
+    <!-- Menu ietm to cancel the IP settings -->
+    <string name="wifi_ip_settings_menu_cancel">Cancel</string>
+    <!-- Error message if the IP address is not valid [CHAR LIMIT=50]-->
+    <string name="wifi_ip_settings_invalid_ip_address">Type a valid IP address.</string>
+    <!-- Error message if the gateway is not valid [CHAR LIMIT=50]-->
+    <string name="wifi_ip_settings_invalid_gateway">Type a valid gateway address.</string>
+    <!-- Error message if the dns is not valid [CHAR LIMIT=50]-->
+    <string name="wifi_ip_settings_invalid_dns">Type a valid DNS address.</string>
+    <!-- Error message if the network prefix length is not valid [CHAR LIMIT=50]-->
+    <string name="wifi_ip_settings_invalid_network_prefix_length">Type a network prefix length between 0 and 32.</string>
+    <!-- Label for the DNS (first one) -->
+    <string name="wifi_dns">DNS</string>
+    <!-- Label for the gateway of the network -->
+    <string name="wifi_gateway">Gateway</string>
+    <!-- Label for the network prefix of the network [CHAR LIMIT=25]-->
+    <string name="wifi_network_subnet_mask">Network subnet mask</string>
+    <!-- Wi-Fi p2p / Wi-Fi Direct settings -->
+    <!-- Used in the 1st-level settings screen to launch Wi-fi Direct settings [CHAR LIMIT=25] -->
+    <string name="wifi_p2p_settings_title">Wi\u2011Fi Direct</string>
+    <string name="wifi_p2p_device_info">Device information</string>
+    <string name="wifi_p2p_persist_network">Remember this connection</string>
+    <!-- Menu option to discover peers-->
+    <string name="wifi_p2p_menu_search">Search for devices</string>
+    <!-- Menu option when discovery is in progress [CHAR LIMIT=25] -->
+    <string name="wifi_p2p_menu_searching">Searching\u2026</string>
+    <!-- Menu option to Rename-->
+    <string name="wifi_p2p_menu_rename">Rename device</string>
+    <!-- Title for available p2p devices -->
+    <string name="wifi_p2p_peer_devices">Peer devices</string>
+    <!-- Title for remembered p2p groups -->
+    <string name="wifi_p2p_remembered_groups">Remembered groups</string>
+    <!-- Toast text for a failed connection initiation -->
+    <string name="wifi_p2p_failed_connect_message">Couldn\u2019t connect.</string>
+    <!-- Message text for failure to rename -->
+    <string name="wifi_p2p_failed_rename_message">Failed to rename device.</string>
+    <!-- Title for disconnect dialog -->
+    <string name="wifi_p2p_disconnect_title">Disconnect?</string>
+    <!-- Message text for disconnection from one device-->
+    <string name="wifi_p2p_disconnect_message">If you disconnect, your connection with <xliff:g id="peer_name">%1$s</xliff:g> will end.</string>
+    <!-- Message text for disconnection from multiple devices-->
+    <string name="wifi_p2p_disconnect_multiple_message">If you disconnect, your connection with <xliff:g id="peer_name">%1$s</xliff:g> and <xliff:g id="peer_count">%2$s</xliff:g> other devices will end.</string>
+    <!-- Title for cancel connect dialog -->
+    <string name="wifi_p2p_cancel_connect_title">Cancel invitation?</string>
+    <!-- Message text for disconnection from one device-->
+    <string name="wifi_p2p_cancel_connect_message">Do you want to cancel invitation to connect with <xliff:g id="peer_name">%1$s</xliff:g>?</string>
+    <!-- Message text for remembered group deletion-->
+    <string name="wifi_p2p_delete_group_message">Forget this group?</string>
+    <!-- Wifi AP settings-->
+    <!-- Label for Wifi tether checkbox. Toggles Access Point on/off  [CHAR LIMIT=30] -->
+    <string name="wifi_hotspot_checkbox_text">Wi\u2011Fi hotspot</string>
+    <!-- Summary text when turning hotspot off -->
+    <string name="wifi_hotspot_off_subtext">Not sharing internet or content with other devices</string>
+<!--    &lt;!&ndash; Summary text when tethering is on &ndash;&gt;-->
+<!--    <string name="wifi_hotspot_tethering_on_subtext" product="tablet">Sharing this tablet\u2019s internet connection via hotspot</string>-->
+    <!-- Summary text when tethering is on -->
+    <string name="wifi_hotspot_tethering_on_subtext" product="default">Sharing this phone\u2019s internet connection via hotspot</string>
+    <!-- Summary text when hotspot is on for local-only -->
+    <string name="wifi_hotspot_on_local_only_subtext">App is sharing content. To share internet connection, turn hotspot off, then on</string>
+    <!-- Summary text when no password is set [CHAR LIMIT=60] -->
+    <string name="wifi_hotspot_no_password_subtext">No password set</string>
+    <!-- Wifi hotspot settings -->
+    <!-- Label for Wifi hotspot name. -->
+    <string name="wifi_hotspot_name_title">Hotspot name</string>
+    <!-- Summary for Wifi hotspot name when connection is in progress. -->
+    <string name="wifi_hotspot_name_summary_connecting">Turning on <xliff:g id="wifi_hotspot_name">%1$s</xliff:g>...</string>
+    <!-- Summary for Wifi hotspot name when connected. -->
+    <string name="wifi_hotspot_name_summary_connected">Other devices can connect to <xliff:g id="wifi_hotspot_name">%1$s</xliff:g></string>
+    <!-- Label for Wifi hotspot password. -->
+    <string name="wifi_hotspot_password_title">Hotspot password</string>
+    <!-- Label for Wifi hotspot AP Band. -->
+    <string name="wifi_hotspot_ap_band_title">AP Band</string>
+    <!-- Wifi hotspot footer info for regular hotspot [CHAR LIMIT=NONE]-->
+    <string name="wifi_hotspot_footer_info_regular">Use hotspot to create a Wi\u2011Fi network for your other devices. Hotspot provides internet using your mobile data connection. Additional mobile data charges may apply.</string>
+    <!-- Wifi hotspot footer info [CHAR LIMIT=NONE]-->
+    <string name="wifi_hotspot_footer_info_local_only">Apps can create a hotspot to share content with nearby devices.</string>
+    <!-- Title for the toggle to turn off hotspot automatically [CHAR LIMIT=NONE]-->
+    <string name="wifi_hotspot_auto_off_title">Turn off hotspot automatically</string>
+    <!-- Summary for the toggle to turn off hotspot automatically [CHAR LIMIT=NONE]-->
+    <string name="wifi_hotspot_auto_off_summary">Wi\u2011Fi hotspot will turn off if no devices are connected</string>
+    <!-- Summary text when turning hotspot on -->
+    <string name="wifi_tether_starting">Turning hotspot on\u2026</string>
+    <!-- Summary text when turning hotspot off -->
+    <string name="wifi_tether_stopping">Turning off hotspot\u2026</string>
+    <!-- Subtext for wifi tether checkbox on success -->
+    <string name="wifi_tether_enabled_subtext"><xliff:g id="network_ssid">%1$s</xliff:g> is active</string>
+    <!-- Subtext for wifi tether checkbox on failure -->
+    <string name="wifi_tether_failed_subtext">Portable Wi\u2011Fi hotspot error</string>
+    <!-- Used to open the ssid and security dialog for Wifi Access Point -->
+    <string name="wifi_tether_configure_ap_text">Set up Wi\u2011Fi hotspot</string>
+    <!-- Used to open the ssid and security dialog for Wifi Access Point.  [CHAR LIMIT=30]-->
+    <string name="wifi_hotspot_configure_ap_text">Wi\u2011Fi hotspot setup</string>
+    <!-- Summary Used to open the ssid and security dialog for Wifi Access Point.  [CHAR LIMIT=60] -->
+    <string name="wifi_hotspot_configure_ap_text_summary">AndroidAP WPA2 PSK hotspot</string>
+    <!-- Default access point SSID used for tethering -->
+    <string name="wifi_tether_configure_ssid_default">AndroidHotspot</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Wi-Fi Testing on the diagnostic screen-->
+    <string name="testing_wifi_info" translatable="false">Wi-Fi information</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Menu item for WifiManager disableNetwork API-->
+    <string name="disableNetwork" translatable="false">disableNetwork</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Menu item for WifiManager enableNetwork API-->
+    <string name="enableNetwork" translatable="false">enableNetwork</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Menu item for WifiManager disconnect API-->
+    <string name="disconnect" translatable="false">disconnect</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Menu item for WifiManager getConfiguredNetworks API-->
+    <string name="getConfiguredNetworks" translatable="false">getConfiguredNetworks</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Menu item for WifiManager getConnectionInfo API-->
+    <string name="getConnectionInfo" translatable="false">getConnectionInfo</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Menu item on Wifi information screen-->
+    <string name="wifi_api_test" translatable="false">Wi-Fi API</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Menu item on Wifi information screen-->
+    <string name="wifi_status_test" translatable="false">Wi-Fi status</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Button text on Wifi Status screen-->
+    <string name="wifi_update" translatable="false">Refresh stats</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="wifi_state_label" translatable="false">Wi-Fi state:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="network_state_label" translatable="false">Network state:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+        Label on Wifi Status screen-->
+    <string name="supplicant_state_label" translatable="false">Supplicant state:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="rssi_label" translatable="false">RSSI:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="bssid_label" translatable="false">BSSID:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="ssid_label" translatable="false">SSID:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="hidden_ssid_label" translatable="false">Hidden SSID:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="ipaddr_label" translatable="false">IPaddr:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="macaddr_label" translatable="false">MAC addr:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="networkid_label" translatable="false">Network ID:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="tx_link_speed_label" translatable="false">Transmit link speed:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="rx_link_speed_label" translatable="false">Receive link speed:</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Status screen-->
+    <string name="scan_list_label" translatable="false">Scan results:</string>
+    <!-- wifi state values-->
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary -->
+    <string name="wifi_state_disabling" translatable="false">Disabling</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary -->
+    <string name="wifi_state_disabled" translatable="false">Disabled</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary -->
+    <string name="wifi_state_enabling" translatable="false">Enabling</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary -->
+    <string name="wifi_state_enabled" translatable="false">Enabled</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary -->
+    <string name="wifi_state_unknown" translatable="false">Unknown</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Menu item on Wifi information screen-->
+    <string name="wifi_config_info" translatable="false">Wi-Fi config</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary
+         Label on Wifi Configuration screen-->
+    <string name="config_list_label" translatable="false">Configured networks</string>
+    <!-- Wireless networks, item title to go into the WFC settings [CHAR LIMIT=30] -->
+    <string name="wifi_calling_settings_title">Wi-Fi calling</string>
+    <!-- Title of suggestion to turn on wifi calling [CHAR LIMIT=46] -->
+    <string name="wifi_calling_suggestion_title">Extend calls with Wi\u2011Fi</string>
+    <!-- Summary of suggestion to turn on wifi calling [CHAR LIMIT=55] -->
+    <string name="wifi_calling_suggestion_summary">Turn on Wi\u2011Fi calling to extend coverage</string>
+    <!-- Title of WFC preference item [CHAR LIMIT=30] -->
+    <string name="wifi_calling_mode_title">Calling preference</string>
+    <!-- Title of WFC preference selection dialog [CHAR LIMIT=30] -->
+    <string name="wifi_calling_mode_dialog_title">Calling preference</string>
+    <!-- Title of WFC roaming preference item [CHAR LIMIT=45] -->
+    <string name="wifi_calling_roaming_mode_title">Roaming preference</string>
+    <!-- Summary of WFC roaming preference item [CHAR LIMIT=NONE]-->
+    <string name="wifi_calling_roaming_mode_summary"><xliff:g id="wfc_roaming_preference" example="Wi-Fi">%1$s</xliff:g></string>
+    <!-- WFC mode dialog [CHAR LIMIT=45] -->
+    <string name="wifi_calling_roaming_mode_dialog_title">Roaming preference</string>
+<!--    <string-array name="wifi_calling_mode_choices">-->
+<!--        <item>@*android:string/wfc_mode_wifi_preferred_summary</item>-->
+<!--        <item>@*android:string/wfc_mode_cellular_preferred_summary</item>-->
+<!--        <item>@*android:string/wfc_mode_wifi_only_summary</item>-->
+<!--    </string-array>-->
+    <string-array name="wifi_calling_mode_choices_v2">
+        <item>Wi-Fi</item>
+        <item>Mobile</item>
+        <item>Wi-Fi only</item>
+    </string-array>
+    <string-array name="wifi_calling_mode_values" translatable="false">
+        <item>"2"</item>
+        <item>"1"</item>
+        <item>"0"</item>
+    </string-array>
+<!--    <string-array name="wifi_calling_mode_choices_without_wifi_only">-->
+<!--        <item>@*android:string/wfc_mode_wifi_preferred_summary</item>-->
+<!--        <item>@*android:string/wfc_mode_cellular_preferred_summary</item>-->
+<!--    </string-array>-->
+    <string-array name="wifi_calling_mode_choices_v2_without_wifi_only">
+        <item>Wi-Fi</item>
+        <item>Mobile</item>
+    </string-array>
+    <string-array name="wifi_calling_mode_values_without_wifi_only" translatable="false">
+        <item>"2"</item>
+        <item>"1"</item>
+    </string-array>
+    <!-- Summary of WFC preference item on the WFC preference selection dialog. [CHAR LIMIT=70]-->
+    <string name="wifi_calling_mode_wifi_preferred_summary">If Wi\u2011Fi is unavailable, use mobile network</string>
+    <!-- Summary of WFC preference item on the WFC preference selection dialog. [CHAR LIMIT=70]-->
+    <string name="wifi_calling_mode_cellular_preferred_summary">If mobile network is unavailable, use Wi\u2011Fi</string>
+    <!-- Summary of WFC preference item on the WFC preference selection dialog. [CHAR LIMIT=70]-->
+    <string name="wifi_calling_mode_wifi_only_summary">Call over Wi\u2011Fi. If Wi\u2011Fi is lost, call will end.</string>
+    <!-- Wi-Fi Calling settings. Text displayed when Wi-Fi Calling is off -->
+    <string name="wifi_calling_off_explanation">When Wi-Fi calling is on, your phone can route calls via Wi-Fi networks or your carrier\u2019s network, depending on your preference and which signal is stronger. Before turning on this feature, check with your carrier regarding fees and other details.<xliff:g id="additional_text" example="Learn More">%1$s</xliff:g></string>
+    <!-- Wi-Fi Calling settings. Additional text displayed when Wi-Fi Calling is off. Default empty. [CHAR LIMIT=NONE] -->
+    <string name="wifi_calling_off_explanation_2"></string>
+    <!-- Title of a preference for updating emergency address [CHAR LIMIT=40] -->
+    <string name="emergency_address_title">Emergency Address</string>
+    <!-- Summary of Update Emergency Address preference, explaining usage of emergency address [CHAR LIMIT=NONE] -->
+    <string name="emergency_address_summary">Used as your location when you make an emergency call over Wi\u2011Fi</string>
+    <!-- Message of private dns that provides a help link. [CHAR LIMIT=NONE] -->
+    <string name="private_dns_help_message"><annotation id="url">Learn more</annotation> about Private DNS features</string>
+    <!-- Message to display when private dns is on. [CHAR LIMIT=10] -->
+    <string name="private_dns_mode_on">On</string>
+    <!-- Message to display when setting wifi calling are not editable [CHAR LIMIT=NONE] -->
+    <string name="wifi_calling_pref_managed_by_carrier">Setting managed by carrier</string>
+    <!-- Message to display when wifi calling needs activation [CHAR LIMIT=NONE] -->
+    <string name="wifi_calling_settings_activation_instructions">Activate Wi\u2011Fi Calling</string>
+    <!-- Message to display when wifi calling should be on [CHAR LIMIT=NONE] -->
+    <string name="wifi_calling_turn_on">Turn on Wi\u2011Fi calling</string>
+    <!-- Message to display when carrier does not support wifi calling or doesn't want the user
+         to modify the settings [CHAR LIMIT=NONE] -->
+    <string name="wifi_calling_not_supported">Wi\u2011Fi calling is not supported for %1$s</string>
+    <!-- Carrier string to use in other messages -->
+    <string name="carrier">Carrier</string>
+
+
+    <!-- hints -->
+    <!-- Hint text for the IP address -->
+    <string name="wifi_ip_address_hint" translatable="false">192.168.1.128</string>
+    <!-- Hint text for DNS -->
+    <string name="wifi_dns1_hint" translatable="false">8.8.8.8</string>
+    <!-- Hint text for the gateway -->
+    <string name="wifi_gateway_hint" translatable="false">192.168.1.1</string>
+    <!-- Hint text for network subnet mask -->
+    <string name="wifi_network_subnet_mask_hint" translatable="false">255.255.255.0</string>
+    <!-- HTTP proxy settings. The hint text field for port. -->
+    <string name="proxy_port_hint" translatable="false">8080</string>
+    <!-- HTTP proxy settings. Hint for Proxy-Auto Config URL. -->
+    <string name="proxy_url_hint" translatable="false">https://www.example.com/proxy.pac</string>
+    <!-- HTTP proxy settings. The hint text for proxy exclusion list. -->
+    <string name="proxy_exclusionlist_hint" translatable="false">example.com,mycomp.test.com,localhost</string>
+    <!-- HTTP proxy settings. The hint text field for the hostname. -->
+    <string name="proxy_hostname_hint" translatable="false">proxy.example.com</string>
+
+
+
+
+    <!-- HTTP proxy settings title -->
+    <string name="proxy_settings_title">Proxy</string>
+    <!-- HTTP proxy settings. Button to clear the proxy box. -->
+    <string name="proxy_clear_text">Clear</string>
+    <!-- HTTP proxy settings. The port number label. -->
+    <string name="proxy_port_label">Proxy port</string>
+    <!-- HTTP proxy settings. The exclusion list label. -->
+    <string name="proxy_exclusionlist_label">Bypass proxy for</string>
+    <!-- HTTP proxy settings. The button to restore the defaults. -->
+    <string name="proxy_defaultView_text">Restore defaults</string>
+    <!-- HTTP proxy settings. The button to save. -->
+    <string name="proxy_action_text">Done</string>
+    <!-- HTTP proxy settings. The text field for the hostname -->
+    <string name="proxy_hostname_label">Proxy hostname</string>
+    <!-- HTTP proxy settings. Title if there is an error-->
+    <string name="proxy_error">Attention</string>
+    <!-- HTTP proxy settings. Button to get rid of error box-->
+    <string name="proxy_error_dismiss">OK</string>
+    <!-- HTTP proxy settings. The error if the hostname is not valid -->
+    <string name="proxy_error_invalid_host">The hostname you typed isn\u2019t valid.</string>
+    <!-- HTTP proxy settings. The error if the exclusion list is not valid -->
+    <string name="proxy_error_invalid_exclusion_list">The exclusion list you typed isn\u2019t properly formatted. Type a comma-separated list of excluded domains.</string>
+    <!-- HTTP proxy settings. Error msg -->
+    <string name="proxy_error_empty_port">You need to complete the port field.</string>
+    <!-- HTTP proxy settings. Error msg -->
+    <string name="proxy_error_empty_host_set_port">The port field must be empty if the host field is empty.</string>
+    <!-- HTTP proxy settings. Error msg -->
+    <string name="proxy_error_invalid_port">The port you typed isn\u2019t valid.</string>
+    <!-- HTTP proxy settings. Warning message about limited application support [CHAR LIMIT=100]-->
+    <string name="proxy_warning_limited_support">The HTTP proxy is used by the browser but may not be used by the other apps.</string>
+    <!-- HTTP proxy settings. Title for Proxy-Auto Config URL.  [CHAR LIMIT=25] -->
+    <string name="proxy_url_title">"PAC URL: "</string>
+
+
+    <string name="data_usage_metered_auto">Automatic</string>
+    <!-- Title for Network usage to control whether Wifi is metered or not [CHAR LIMIT=20] -->
+    <string name="wifi_metered_title">Network usage</string>
+    <!-- Option for indicating that a network is metered (expensive). [CHAR LIMIT=32] -->
+    <string name="data_usage_metered_yes">Metered</string>
+    <!-- Option for indicating that a network is not metered (inexpensive). [CHAR LIMIT=32] -->
+    <string name="data_usage_metered_no">Not metered</string>
+</resources>

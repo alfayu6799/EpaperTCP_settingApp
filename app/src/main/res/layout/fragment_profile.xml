@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (C) 2010 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/device_profile_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <!-- profile list -->
+    <LinearLayout
+        style="@style/wifi_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/device_profile_profile_name_label"
+                style="@style/wifi_item_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:minEms="16"
+                android:text="@string/device_profile_profile_to_configure" />
+
+            <ImageButton
+                android:id="@+id/device_profile_add_profile"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/baseline_add_24" />
+
+            <ImageButton
+                android:id="@+id/device_profile_delete_profile"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/baseline_delete_24" />
+
+            <ImageButton
+                android:id="@+id/device_profile_save_profile"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/baseline_save_24" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/device_profile_profile_name_spinner"
+            style="@style/wifi_item_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="160dp"
+            android:prompt="@string/device_profile_profile_to_configure" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separatorLine" />
+
+    <ScrollView
+        android:id="@+id/configPageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:fillViewport="true"
+        android:scrollIndicators="top|bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <!-- device type -->
+            <LinearLayout
+                style="@style/wifi_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/wifi_item_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minEms="16"
+                    android:text="@string/device_configuration_device_type" />
+
+                <Spinner
+                    android:id="@+id/device_profile_device_type_list"
+                    style="@style/wifi_item_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/device_configuration_device_type" />
+            </LinearLayout>
+
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/device_profile_settings_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.yonglin.pdc.epaper_setting.fragments.SettingsFragment"
+                android:tag="fragment_profile_settings">
+            </androidx.fragment.app.FragmentContainerView>
+
+<!--            <include-->
+<!--                android:id="@+id/device_profile_settings_layout"-->
+<!--                layout="@layout/content_settings" />-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+

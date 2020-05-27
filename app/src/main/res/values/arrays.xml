@@ -1,0 +1,115 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Match this with the constants in WifiDialog. --> <skip />
+    <!-- Wi-Fi settings.  The type of EAP method a Wi-Fi network has. -->
+    <string-array name="wifi_eap_method" translatable="false">
+        <item>PEAP</item>
+        <item>TTLS</item>
+        <item>TLS</item>
+<!--        <item>PWD</item>-->
+<!--        <item>SIM</item>-->
+<!--        <item>AKA</item>-->
+<!--        <item>AKA\'</item>-->
+    </string-array>
+
+    <string-array name="wifi_eap_method_profile" translatable="false">
+        <item>PEAP</item>
+        <item>TTLS</item>
+<!--        <item>TLS</item>-->
+        <!--        <item>PWD</item>-->
+        <!--        <item>SIM</item>-->
+        <!--        <item>AKA</item>-->
+        <!--        <item>AKA\'</item>-->
+    </string-array>
+
+    <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+    <string-array name="wifi_signal">
+        <item>Poor</item>
+        <item>Poor</item>
+        <item>Fair</item>
+        <item>Good</item>
+        <item>Excellent</item>
+    </string-array>
+    <!-- Data Usage settings. Range of data usage. -->
+    <string-array name="data_usage_data_range">
+        <!-- Last 30 days [CHAR LIMIT=25]-->
+        <item>Last 30 days</item>
+        <!-- Set usage cycle [CHAR LIMIT=25]-->
+        <item>Set usage cycle...</item>
+    </string-array>
+    <!-- Display options for UsageStats class -->
+    <string-array name="usage_stats_display_order_types">
+        <item>Usage time</item>
+        <item>Last time used</item>
+        <item>App name</item>
+    </string-array>
+    <!-- EAP method -->
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+<!--        <item>PWD</item>-->
+    </string-array>
+    <!-- Phase 2 options for PEAP -->
+    <string-array name="wifi_peap_phase2_entries">
+<!--        <item>None</item>-->
+        <item>MSCHAPV2</item>
+<!--        <item>GTC</item>-->
+    </string-array>
+    <!-- Type of EAP method when EAP SIM, AKA, AKA' are supported -->
+    <string-array name="wifi_peap_phase2_entries_with_sim_auth">
+        <item>None</item>
+        <item translatable="false">MSCHAPV2</item>
+        <item translatable="false">GTC</item>
+        <item translatable="false">SIM</item>
+        <item translatable="false">AKA</item>
+        <item translatable="false">AKA\'</item>
+    </string-array>
+    <!-- Phase 2 options for rest of EAP methods -->
+    <string-array name="wifi_phase2_entries">
+<!--        <item>None</item>-->
+<!--        <item>PAP</item>-->
+<!--        <item>MSCHAP</item>-->
+        <item>MSCHAPV2</item>
+<!--        <item>GTC</item>-->
+    </string-array>
+    <!-- Wi-Fi IP settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <string-array name="wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>Static</item>
+    </string-array>
+    <!-- Wi-Fi proxy settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <string-array name="wifi_proxy_settings">
+        <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>None</item>
+        <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+        <item>Manual</item>
+        <!-- Proxy Auto-Config URL that is used for the current wifi network [CHAR LIMIT=25] -->
+        <item>Proxy Auto-Config</item>
+    </string-array>
+    <string-array name="wifi_metered_entries">
+        <item>Detect automatically</item>
+        <item>Treat as metered</item>
+        <item>Treat as unmetered</item>
+    </string-array>
+    <string-array name="wifi_privacy_entries">
+        <item>Use randomized MAC (default)</item>
+        <item>Use device MAC</item>
+    </string-array>
+    <string-array name="wifi_hidden_entries">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+    <string-array name="wifi_metered_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="wifi_privacy_values" translatable="false">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+</resources>

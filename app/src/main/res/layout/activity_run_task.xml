@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_loader_background"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/run_task_log_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_container"
+        android:minHeight="100dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="3dp"
+            android:text="@string/device_configuration_log"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:scrollIndicators="top|bottom">
+
+            <TextView
+                android:id="@+id/run_task_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_textview_border"
+                android:padding="2dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/run_task_done_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:background="@drawable/action_button"
+            android:text="@string/run_task_done"
+            android:textColor="@color/actionButtonText" />
+    </LinearLayout>
+</LinearLayout>

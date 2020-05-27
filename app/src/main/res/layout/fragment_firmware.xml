@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/device_firmware_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!-- device type -->
+    <LinearLayout
+        style="@style/wifi_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/wifi_item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="16"
+            android:text="@string/device_configuration_device_type" />
+
+        <Spinner
+            android:id="@+id/device_firmware_device_type_list"
+            style="@style/wifi_item_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/device_configuration_device_type" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separatorLine" />
+
+    <!-- browser for firmware file, reusing device config fragment except this part -->
+    <LinearLayout
+        style="@style/wifi_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/wifi_item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_firmware_label" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/firmware_file_status"
+                style="@style/wifi_item_status_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/file_status_missing"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/firmware_file_clear_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/firmware_file_clear_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:minWidth="@dimen/min_tap_target_size"
+                android:minHeight="@dimen/min_tap_target_size"
+                android:src="@drawable/baseline_clear_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/firmware_file_button"
+                app:layout_constraintStart_toEndOf="@+id/firmware_file_status"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/firmware_file_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:minWidth="@dimen/min_tap_target_size"
+                android:minHeight="@dimen/min_tap_target_size"
+                android:src="@drawable/baseline_folder_open_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separatorLine" />
+
+    <LinearLayout
+        style="@style/wifi_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/wifi_item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_firmware_checksum_label" />
+
+        <EditText
+            android:id="@+id/firmware_checksum_text"
+            style="@style/wifi_item_edit_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+            android:digits="0123456789ABCDEF"
+            android:maxLength="4"
+            android:hint="@string/firmware_checksum_hint"
+            android:singleLine="true" />
+    </LinearLayout>
+    <!-- end firmware specific components-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separatorLine" />
+
+    <!-- device list -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/wifi_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/wifi_item_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="16"
+                android:text="@string/device_configuration_device_selection" />
+
+            <TextView
+                android:id="@+id/device_firmware_selection_status"
+                style="@style/wifi_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="1dp"
+                android:paddingBottom="8dp"
+                android:text="@string/device_configuration_device_selected"
+                android:textAppearance="?android:attr/textAppearanceListItem" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/device_firmware_search_devices"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/baseline_search_24" />
+
+        <ImageButton
+            android:id="@+id/device_firmware_select_all"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/baseline_check_circle_24" />
+
+        <ImageButton
+            android:id="@+id/device_firmware_clear_all"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/baseline_clear_24" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separatorLine" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/device_firmware_recycler_view_device_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:minHeight="100dp"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/device_item" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separatorLine" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/device_firmware_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_configuration_device_apply"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/device_firmware_show_log"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/baseline_event_note_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toEndOf="@id/device_firmware_apply"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yonglin.pdc.epaper_setting.MainActivity">
+    <group android:id="@+id/menu_group">
+        <item
+            android:id="@+id/action_device_configuration"
+            android:orderInCategory="100"
+            android:title="@string/menu_device_configuration"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_device_batch_configuration"
+            android:orderInCategory="100"
+            android:title="@string/menu_device_batch_configuration"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_firmware"
+            android:orderInCategory="100"
+            android:title="@string/menu_firmware"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_profiles"
+            android:orderInCategory="100"
+            android:title="@string/menu_profiles"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_about"
+            android:orderInCategory="100"
+            android:title="@string/menu_about"
+            app:showAsAction="never" />
+    </group>
+</menu>

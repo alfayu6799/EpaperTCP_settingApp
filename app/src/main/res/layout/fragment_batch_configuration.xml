@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/batch_configuration_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!-- device type -->
+    <LinearLayout
+        style="@style/wifi_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/wifi_item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="16"
+            android:text="@string/device_configuration_device_type" />
+
+        <Spinner
+            android:id="@+id/batch_configuration_device_type_list"
+            style="@style/wifi_item_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/device_configuration_device_type" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separatorLine" />
+
+    <!-- profile list -->
+    <LinearLayout
+        style="@style/wifi_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/wifi_item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="16"
+            android:text="@string/device_configuration_device_profile" />
+
+        <Spinner
+            android:id="@+id/batch_configuration_device_profile_list"
+            style="@style/wifi_item_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/device_configuration_device_profile" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separatorLine" />
+
+    <!-- device list -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/wifi_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/wifi_item_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="16"
+                android:text="@string/device_configuration_device_selection" />
+
+            <TextView
+                android:id="@+id/batch_configuration_selection_status"
+                style="@style/wifi_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="1dp"
+                android:paddingBottom="8dp"
+                android:text="@string/device_configuration_device_selected"
+                android:textAppearance="?android:attr/textAppearanceListItem" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/batch_configuration_search_devices"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/baseline_search_24" />
+
+        <ImageButton
+            android:id="@+id/batch_configuration_select_all"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/baseline_check_circle_24" />
+
+        <ImageButton
+            android:id="@+id/batch_configuration_clear_all"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/baseline_clear_24" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separatorLine" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/batch_recycler_view_device_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:minHeight="100dp"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/device_item" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separatorLine" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/batch_configuration_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_configuration_device_apply"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/batch_configuration_show_log"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/baseline_event_note_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toEndOf="@id/batch_configuration_apply"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

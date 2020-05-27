@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_loader_background"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_container"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/select_wifi_ssid_name"
+            style="@style/wifi_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="@string/device_profile_wifi_hint"
+            android:minWidth="100dp"
+            android:padding="8dp"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@id/select_wifi_recycler_view_ssid_list"
+            app:layout_constraintEnd_toStartOf="@+id/select_wifi_guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/select_wifi_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <ImageButton
+            android:id="@+id/select_wifi_search_devices"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/baseline_search_24"
+            app:layout_constraintBottom_toTopOf="@id/select_wifi_recycler_view_ssid_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/select_wifi_guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separatorLine"
+            app:layout_constraintBottom_toTopOf="@id/select_wifi_recycler_view_ssid_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/select_wifi_ssid_name" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/select_wifi_recycler_view_ssid_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="100dp"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toTopOf="@id/select_wifi_ok"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/select_wifi_ssid_name"
+            tools:listitem="@layout/device_item" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separatorLine"
+            app:layout_constraintBottom_toTopOf="@id/select_wifi_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/select_wifi_recycler_view_ssid_list" />
+
+        <Button
+            android:id="@+id/select_wifi_cancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="3dp"
+            android:text="@string/button_cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/select_wifi_ok"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/select_wifi_recycler_view_ssid_list" />
+
+        <Button
+            android:id="@+id/select_wifi_ok"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="3dp"
+            android:text="@string/button_ok"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/select_wifi_cancel"
+            app:layout_constraintTop_toBottomOf="@id/select_wifi_recycler_view_ssid_list" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
